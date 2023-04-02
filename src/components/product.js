@@ -16,6 +16,7 @@ import { Fragment, useState } from 'react'
 import { Dialog, RadioGroup, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { StarIcon } from '@heroicons/react/20/solid'
+import axios from 'axios';
 
 
 function classNames(...classes) {
@@ -26,7 +27,34 @@ export default function Product(props) {
     const product = props.product;
 
 
-    const [open, setOpen] = useState(true)
+    const [open, setOpen] = useState(true);
+    const [phoneNumber, setPhoneNumber] = useState('47992311551');
+    const [message, setMessage] = useState('Obrigado por comprar conosco!');
+
+
+    const sendMessage = () => {
+        axios({
+            method: 'POST',
+            url: 'https://graph.facebook.com/v16.0/113794505007455/messages',
+            headers: {
+                'Authorization': 'Bearer EAAMvrBPm1PoBAGPn32QZCKhPZCDsWqf8kimtMJNqmUHbqDYAaXxah4BLDALIFdbdVEaMg8jbI64LueJMcATKjPjIZBh6bOvuOeayZCsZCPWno3bNTAL4UrxiKHZAbSrTGWizr72OAoNNSxNflN6A42yUvzpYEzp4IUZBi8a8vvgqrwBM5kjBNa6YXrSFnf8tHZBbDeKdVhmhCAZDZD',
+                'Content-Type': 'application/json'
+            },
+            data: {
+                "messaging_product": "whatsapp",
+                "to": "5547992311551",
+                "type": "template",
+                "template": {
+                    "name": "hello_world",
+                    "language": { "code": "en_US" }
+                }
+            }
+        }).then(response => {
+            console.log(response);
+        }).catch(error => {
+            console.log(error);
+        });
+    };
 
     return (
         <div>
@@ -110,6 +138,7 @@ export default function Product(props) {
 
 
                                                     <button
+                                                        onClick={sendMessage}
                                                         type="submit"
                                                         className="mt-6 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 w-full">
                                                         Comprar

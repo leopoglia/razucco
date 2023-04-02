@@ -5,7 +5,7 @@ export default function Footer() {
             <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
                 <div class="md:flex md:items-center md:justify-between">
                     <a href="https://flowbite.com/" class="flex items-center md-4 md:md-0 justify-center">
-                        <img className="w-16 rounded-md" src="/imgs/logo.gif" alt="" />
+                        <img className="w-16 rounded-xl" src="/imgs/icone.png" alt="" />
                     </a>
                     <ul class="flex flex-wrap items-center md-6 mt-4 md:mt-0 text-sm font-medium text-gray-900 md:md-0 dark:text-gray-900 justify-center">
                         <li>
