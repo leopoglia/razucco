@@ -16,7 +16,6 @@ import { Fragment, useState } from 'react'
 import { Dialog, RadioGroup, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { StarIcon } from '@heroicons/react/20/solid'
-import axios from 'axios';
 
 
 function classNames(...classes) {
@@ -28,32 +27,31 @@ export default function Product(props) {
 
 
     const [open, setOpen] = useState(true);
-    const [phoneNumber, setPhoneNumber] = useState('47992311551');
-    const [message, setMessage] = useState('Obrigado por comprar conosco!');
 
 
     const sendMessage = () => {
-        axios({
+        fetch('https://graph.facebook.com/v16.0/113794505007455/messages', {
             method: 'POST',
-            url: 'https://graph.facebook.com/v16.0/113794505007455/messages',
             headers: {
-                'Authorization': 'Bearer EAAMvrBPm1PoBAGPn32QZCKhPZCDsWqf8kimtMJNqmUHbqDYAaXxah4BLDALIFdbdVEaMg8jbI64LueJMcATKjPjIZBh6bOvuOeayZCsZCPWno3bNTAL4UrxiKHZAbSrTGWizr72OAoNNSxNflN6A42yUvzpYEzp4IUZBi8a8vvgqrwBM5kjBNa6YXrSFnf8tHZBbDeKdVhmhCAZDZD',
+                'Authorization': 'Bearer EAAMvrBPm1PoBAIZAB9AVt59AZA4LQRcFZC4CQmBFem7V4ZA0ZBaV9j9Y83YJYZBPWMxJeqReZCYZCkW3QKZBJr1zGIfZBT2eR2x4boljBz3ZAtpjepKCt6bdPcYWH6A07kTeS3nkIg5KVV5XlBihQ2nct7CKDCNBSCor0riSt2kcUtaEELtizRDlELmL11CMKmW0lMOhnWQKwaFmQZDZD',
                 'Content-Type': 'application/json'
             },
-            data: {
-                "messaging_product": "whatsapp",
-                "to": "5547992311551",
-                "type": "template",
-                "template": {
-                    "name": "hello_world",
-                    "language": { "code": "en_US" }
+            body: JSON.stringify({
+                messaging_product: 'whatsapp',
+                to: '5547992311551',
+                type: 'template',
+                template: {
+                    name: 'hello_world',
+                    language: {
+                        code: 'en_US'
+                    }
                 }
-            }
-        }).then(response => {
-            console.log(response);
-        }).catch(error => {
-            console.log(error);
-        });
+            })
+        })
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.error(error));
+
     };
 
     return (
