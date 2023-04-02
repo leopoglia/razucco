@@ -2,37 +2,38 @@ import { useState } from "react"
 import ProductModal from "./product.js"
 
 const products = [
+  
   {
     id: 1,
+    name: 'Netflix - 30 dias 4K',
+    href: '#',
+    price: 'R$20,00 (-65%)',
+    imageSrc: 'https://play-lh.googleusercontent.com/TBRwjS_qfJCSj1m7zZB93FnpJM5fSpMA_wUlFDLxWAb45T9RmwBvQd5cWR5viJJOhkI',
+    imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+  },
+  {
+    id: 2,
     name: 'Disney Plus - 30 dias',
     href: '#',
-    price: 'R$5',
+    price: 'R$15,00 (-50%)',
     imageSrc: 'https://play-lh.googleusercontent.com/xoGGYH2LgLibLDBoxMg-ZE16b-RNfITw_OgXBWRAPin2FZY4FGB9QKBYApR-0rSCkQ',
     imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
   },
   {
-    id: 2,
+    id: 3,
     name: 'HBO Max - 30 dias',
     href: '#',
-    price: 'R$5',
+    price: 'R$10,00 (-50%)',
     imageSrc: 'https://play-lh.googleusercontent.com/1iyX7VdQ7MlM7iotI9XDtTwgiVmqFGzqwz10L67XVoyiTmJVoHX87QtqvcXgUnb0AC8',
     imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
   },
   {
-    id: 3,
+    id: 4,
     name: 'Prime Video - 30 dias',
     href: '#',
-    price: 'R$5',
+    price: 'R$8,00 (-50%)',
     imageSrc: 'https://play-lh.googleusercontent.com/VojafVZNddI6JvdDGWFrRmxc-prrcInL2AuBymsqGoeXjT4f9sv7KnetB-v3iLxk_Koi',
     imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
-  },
-  {
-    id: 4,
-    name: 'Netflix - 30 dias',
-    href: '#',
-    price: 'R$10',
-    imageSrc: 'https://play-lh.googleusercontent.com/TBRwjS_qfJCSj1m7zZB93FnpJM5fSpMA_wUlFDLxWAb45T9RmwBvQd5cWR5viJJOhkI',
-    imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
   },
   // More products...
 ]
@@ -43,7 +44,7 @@ export default function Product() {
   const [product, setProduct] = useState({});
 
   return (
-    <div className="bg-black text-white">
+    <div className="bg-white">
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <h2 className="sr-only">Products</h2>
 
@@ -57,8 +58,8 @@ export default function Product() {
                   className="h-full w-full object-cover object-center group-hover:opacity-75"
                 />
               </div>
-              <h3 className="mt-4 text-sm text-gray-200">{product.name}</h3>
-              <p className="mt-1 text-lg font-medium text-gray-400">{product.price}</p>
+              <h3 className="mt-4 text-sm text-gray-600">{product.name}</h3>
+              <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
             </div>
           ))}
 

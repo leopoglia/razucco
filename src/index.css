@@ -7,12 +7,5 @@ body {
   font-family: Poppins, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--b);
-  color: var(--w);
   font-family: 'Poppins', sans-serif;
-}
-
-:root {
-  --b: #000;
-  --w: #fff;
 }

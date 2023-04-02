@@ -1,13 +1,12 @@
 export default function Footer() {
     return (
-      <section className="relative isolate overflow-hidden bg-black px-6 py-24 sm:py-32 lg:px-8">
+      <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-4xl">
 
           <figure className="mt-10">
-            <blockquote className="text-center text-xl font-semibold leading-8 text-gray-300 sm:text-2xl sm:leading-9">
+            <blockquote className="text-center text-xl font-ligth leading-8 text-gray-600 sm:text-2xl sm:leading-9">
               <p>
-                “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias
-                molestiae. Numquam corrupti in laborum sed rerum et corporis.”
+                “Acabei de assinar a Raze e estou adorando! O catálogo de filmes e séries é incrível, e a qualidade do streaming é excelente. Além disso, o atendimento ao cliente da Raze é excepcional - sempre recebo respostas rápidas e eficazes quando tenho alguma dúvida. Recomendo a Raze para quem procura um serviço de streaming de alta qualidade e confiável.”
               </p>
             </blockquote>
             <figcaption className="mt-10">
@@ -17,11 +16,11 @@ export default function Footer() {
                 alt=""
               />
               <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-                <div className="font-semibold text-gray-300">Judith Black</div>
-                <svg viewBox="0 0 2 2" width={3} height={3} aria-hidden="true" className="fill-gray-300">
+                <div className="font-semibold text-gray-800">Claudia Ramos</div>
+                <svg viewBox="0 0 2 2" width={3} height={3} aria-hidden="true" className="fill-gray-800">
                   <circle cx={1} cy={1} r={1} />
                 </svg>
-                <div className="text-gray-400">CEO of Workcation</div>
+                <div className="text-gray-800">Cliente</div>
               </div>
             </figcaption>
           </figure>
