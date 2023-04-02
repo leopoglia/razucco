@@ -17,39 +17,16 @@ import { Dialog, RadioGroup, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { StarIcon } from '@heroicons/react/20/solid'
 
-const product = {
-    name: 'Basic Tee 6-Pack ',
-    price: '$192',
-    rating: 3.9,
-    reviewCount: 117,
-    href: '#',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-quick-preview-02-detail.jpg',
-    imageAlt: 'Two each of gray, white, and black shirts arranged on table.',
-    colors: [
-        { name: 'White', class: 'bg-white', selectedClass: 'ring-gray-400' },
-        { name: 'Gray', class: 'bg-gray-200', selectedClass: 'ring-gray-400' },
-        { name: 'Black', class: 'bg-gray-900', selectedClass: 'ring-gray-900' },
-    ],
-    sizes: [
-        { name: 'XXS', inStock: true },
-        { name: 'XS', inStock: true },
-        { name: 'S', inStock: true },
-        { name: 'M', inStock: true },
-        { name: 'L', inStock: true },
-        { name: 'XL', inStock: true },
-        { name: 'XXL', inStock: true },
-        { name: 'XXXL', inStock: false },
-    ],
-}
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
 export default function Product(props) {
+    const product = props.product;
+
+
     const [open, setOpen] = useState(true)
-    const [selectedColor, setSelectedColor] = useState(product.colors[0])
-    const [selectedSize, setSelectedSize] = useState(product.sizes[2])
 
     return (
         <div>
@@ -83,7 +60,7 @@ export default function Product(props) {
                                         <button
                                             type="button"
                                             className="absolute right-4 top-4 text-gray-400 hover:text-gray-500 sm:right-6 sm:top-8 md:right-6 md:top-6 lg:right-8 lg:top-8"
-                                            onClick={() => {setOpen(false); props.setOpen(false)}}
+                                            onClick={() => { setOpen(false); props.setOpen(false) }}
                                         >
                                             <span className="sr-only">Close</span>
                                             <XMarkIcon className="h-6 w-6" aria-hidden="true" />
@@ -133,7 +110,7 @@ export default function Product(props) {
                                                     </h3>
 
                                                     <form>
-                                                        
+
                                                         <button
                                                             type="submit"
                                                             className="mt-6 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">

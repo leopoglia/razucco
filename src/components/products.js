@@ -40,6 +40,7 @@ const products = [
 export default function Product() {
 
   const [open, setOpen] = useState(false);
+  const [product, setProduct] = useState({});
 
   return (
     <div className="bg-black text-white">
@@ -48,7 +49,7 @@ export default function Product() {
 
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
           {products.map((product) => (
-            <div className="cursor-pointer" key={product.id} onClick={() => setOpen(true)}>
+            <div className="cursor-pointer" key={product.id} onClick={() => {setOpen(true); setProduct(product)}}>
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-600 xl:aspect-h-8 xl:aspect-w-7">
                 <img
                   src={product.imageSrc}
@@ -61,7 +62,7 @@ export default function Product() {
             </div>
           ))}
 
-          <ProductModal open={open} setOpen={setOpen} />
+          <ProductModal open={open} setOpen={setOpen} product={product} />
 
         </div>
       </div>
