@@ -3,18 +3,19 @@ export default function pricing() {
     return (
         <div class="bg-white py-10 sm:py-10">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                <div class="mx-auto max-w-2xl sm:text-center">
+                <div class="mx-auto max-w-2xl text-center">
                     <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Streaming preço justo</h2>
                     <p class="mt-6 text-lg leading-7 text-gray-600">Bem-vindo à Raze, loja de contas de streaming compartilhadas! Nós oferecemos acesso a uma ampla variedade de plataformas de streaming de vídeo por uma fração do preço de uma conta individual.</p>
                 </div>
-                <div class="mx-auto max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-10 lg:mx-0 lg:flex lg:max-w-none">
+                <div class="mx-auto max-w-2xl rounded-3xl ring-1 ring-gray-200 mt-10 lg:mx-0 lg:flex lg:max-w-none">
                     <div class="p-8 sm:p-10 lg:flex-auto">
-                        <h3 class="flex items-center text-2xl font-bold tracking-tight text-gray-900">Super Combo Streaming
-
-                            <img src="https://play-lh.googleusercontent.com/TBRwjS_qfJCSj1m7zZB93FnpJM5fSpMA_wUlFDLxWAb45T9RmwBvQd5cWR5viJJOhkI" className="w-10 ml-4 rounded-md" alt="" />
-                            <img src="https://play-lh.googleusercontent.com/VojafVZNddI6JvdDGWFrRmxc-prrcInL2AuBymsqGoeXjT4f9sv7KnetB-v3iLxk_Koi" className="w-10 ml-4 rounded-md" alt="" />
-                            <img src="https://play-lh.googleusercontent.com/1iyX7VdQ7MlM7iotI9XDtTwgiVmqFGzqwz10L67XVoyiTmJVoHX87QtqvcXgUnb0AC8" className="w-10 ml-4 rounded-md" alt="" />
-                            <img src="https://play-lh.googleusercontent.com/xoGGYH2LgLibLDBoxMg-ZE16b-RNfITw_OgXBWRAPin2FZY4FGB9QKBYApR-0rSCkQ" className="w-10 ml-4 rounded-md" alt="" />
+                        <h3 class="block md:flex items-center text-2xl font-bold tracking-tight text-gray-900">Super Combo Streaming
+                            <div className="flex md:ml-4 mt-4 md:mt-0">
+                                <img src="https://play-lh.googleusercontent.com/TBRwjS_qfJCSj1m7zZB93FnpJM5fSpMA_wUlFDLxWAb45T9RmwBvQd5cWR5viJJOhkI" className="w-10 mr-4 rounded-md" alt="" />
+                                <img src="https://play-lh.googleusercontent.com/VojafVZNddI6JvdDGWFrRmxc-prrcInL2AuBymsqGoeXjT4f9sv7KnetB-v3iLxk_Koi" className="w-10 mr-4 rounded-md" alt="" />
+                                <img src="https://play-lh.googleusercontent.com/1iyX7VdQ7MlM7iotI9XDtTwgiVmqFGzqwz10L67XVoyiTmJVoHX87QtqvcXgUnb0AC8" className="w-10 mr-4 rounded-md" alt="" />
+                                <img src="https://play-lh.googleusercontent.com/xoGGYH2LgLibLDBoxMg-ZE16b-RNfITw_OgXBWRAPin2FZY4FGB9QKBYApR-0rSCkQ" className="w-10 mr-4 rounded-md" alt="" />
+                            </div>
 
                         </h3>
                         <p class="mt-6 text-base leading-7 text-gray-600">Aproveite o melhor do entretenimento com as quatro plataformas de streaming mais populares em uma única compra: Netflix, Prime video, HBO Max e Disney+.</p>
