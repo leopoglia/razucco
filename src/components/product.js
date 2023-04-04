@@ -25,34 +25,8 @@ function classNames(...classes) {
 export default function Product(props) {
     const product = props.product;
 
-
+    const [buy, setBuy] = useState(false);
     const [open, setOpen] = useState(true);
-
-
-    const sendMessage = () => {
-        fetch('https://graph.facebook.com/v16.0/113794505007455/messages', {
-            method: 'POST',
-            headers: {
-                'Authorization': 'Bearer EAAMvrBPm1PoBAIZAB9AVt59AZA4LQRcFZC4CQmBFem7V4ZA0ZBaV9j9Y83YJYZBPWMxJeqReZCYZCkW3QKZBJr1zGIfZBT2eR2x4boljBz3ZAtpjepKCt6bdPcYWH6A07kTeS3nkIg5KVV5XlBihQ2nct7CKDCNBSCor0riSt2kcUtaEELtizRDlELmL11CMKmW0lMOhnWQKwaFmQZDZD',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                messaging_product: 'whatsapp',
-                to: '5547992311551',
-                type: 'template',
-                template: {
-                    name: 'hello_world',
-                    language: {
-                        code: 'en_US'
-                    }
-                }
-            })
-        })
-            .then(response => response.json())
-            .then(data => console.log(data))
-            .catch(error => console.error(error));
-
-    };
 
     return (
         <div>
@@ -92,58 +66,80 @@ export default function Product(props) {
                                             <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                                         </button>
 
-                                        <div className="grid w-full grid-cols-1 items-start gap-x-6 gap-y-8 sm:grid-cols-12 lg:gap-x-8">
-                                            <div className="aspect-h-3 aspect-w-2 overflow-hidden rounded-lg bg-gray-100 sm:col-span-4 lg:col-span-5">
-                                                <img src={product.imageSrc} alt={product.imageAlt} className="object-cover object-center" />
-                                            </div>
-                                            <div className="h-full grid sm:col-span-8 lg:col-span-7">
-                                                <div className='mt-0'>
-                                                    <h2 className="text-2xl font-bold text-gray-900 sm:pr-12">{product.name}</h2>
+                                        {buy === false ?
+                                            <div className="grid w-full grid-cols-1 items-start gap-x-6 gap-y-8 sm:grid-cols-12 lg:gap-x-8">
+                                                <div className="aspect-h-3 aspect-w-2 overflow-hidden rounded-lg bg-gray-100 sm:col-span-4 lg:col-span-5">
+                                                    <img src={product.imageSrc} alt={product.imageAlt} className="object-cover object-center" />
+                                                </div>
+                                                <div className="h-full grid sm:col-span-8 lg:col-span-7">
+                                                    <div className='mt-0'>
+                                                        <h2 className="text-2xl font-bold text-gray-900 sm:pr-12">{product.name}</h2>
 
-                                                    <section aria-labelledby="information-heading" className="mt-2">
-                                                        <h3 id="information-heading" className="sr-only">
-                                                            Product information
+                                                        <section aria-labelledby="information-heading" className="mt-2">
+                                                            <h3 id="information-heading" className="sr-only">
+                                                                Product information
+                                                            </h3>
+
+                                                            <p className="text-2xl text-gray-900">{product.price}</p>
+
+                                                            {/* Reviews */}
+                                                            <div className="mt-6">
+                                                                <h4 className="sr-only">Reviews</h4>
+                                                                <div className="flex items-center">
+                                                                    <div className="flex items-center">
+                                                                        {[0, 1, 2, 3, 4].map((rating) => (
+                                                                            <StarIcon
+                                                                                key={rating}
+                                                                                className={classNames(
+                                                                                    product.rating > rating ? 'text-yellow-900' : 'text-yellow-500',
+                                                                                    'h-5 w-5 flex-shrink-0'
+                                                                                )}
+                                                                                aria-hidden="true"
+                                                                            />
+                                                                        ))}
+                                                                    </div>
+                                                                    <p className="sr-only">{product.rating} out of 5 stars</p>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+
+                                                    <section aria-labelledby="options-heading" className="mt-10 flex items-end w-full">
+                                                        <h3 id="options-heading" className="sr-only">
+                                                            Product options
                                                         </h3>
 
-                                                        <p className="text-2xl text-gray-900">{product.price}</p>
 
-                                                        {/* Reviews */}
-                                                        <div className="mt-6">
-                                                            <h4 className="sr-only">Reviews</h4>
-                                                            <div className="flex items-center">
-                                                                <div className="flex items-center">
-                                                                    {[0, 1, 2, 3, 4].map((rating) => (
-                                                                        <StarIcon
-                                                                            key={rating}
-                                                                            className={classNames(
-                                                                                product.rating > rating ? 'text-yellow-900' : 'text-yellow-500',
-                                                                                'h-5 w-5 flex-shrink-0'
-                                                                            )}
-                                                                            aria-hidden="true"
-                                                                        />
-                                                                    ))}
-                                                                </div>
-                                                                <p className="sr-only">{product.rating} out of 5 stars</p>
-                                                            </div>
-                                                        </div>
+                                                        <button
+                                                            type="submit"
+                                                            onClick={() => { setBuy(true) }}
+                                                            className="mt-6 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 w-full">
+                                                            Comprar
+                                                        </button>
                                                     </section>
                                                 </div>
-
-                                                <section aria-labelledby="options-heading" className="mt-10 flex items-end w-full">
-                                                    <h3 id="options-heading" className="sr-only">
-                                                        Product options
-                                                    </h3>
-
-
-                                                    <button
-                                                        onClick={sendMessage}
-                                                        type="submit"
-                                                        className="mt-6 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 w-full">
-                                                        Comprar
-                                                    </button>
-                                                </section>
                                             </div>
-                                        </div>
+                                            :
+                                            <div className="grid w-full items-center w-full grid-cols-1 items-start gap-x-6 gap-y-8 sm:grid-cols-12 lg:gap-x-8">
+                                                <div className="aspect-h-3 aspect-w-2 overflow-hidden rounded-lg bg-gray-100 sm:col-span-4 lg:col-span-5">
+                                                    <img src="/imgs/qr10.jpg" className="object-cover object-center" />
+                                                </div>
+                                                <div className="h-full flex sm:col-span-8 lg:col-span-7 items-center justify-center text-center">
+                                                    <div className="overflow-hidden">
+                                                        <div className="overflow-hidden whitespace-nowrap truncate">
+                                                            00020126580014br.gov.bcb.pix0136b64e27fe-4785-4a19-85eb-e6816e079579520400005303986540510.005802BR5922LEONARDO HEITOR POGLIA6009Sao Paulo62070503***63048A1A
+                                                        </div>
+
+                                                        <button
+                                                            type="submit"
+                                                            onClick={() => { setBuy(true) }}
+                                                            className="mt-6 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 w-full">
+                                                            Copiar
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        }
                                     </div>
                                 </Dialog.Panel>
                             </Transition.Child>
