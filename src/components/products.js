@@ -3,21 +3,21 @@ import ProductModal from "./product.js"
 
 const products = [
   
-  {
-    id: 1,
-    name: 'Netflix - 30 dias 4K',
-    href: '#',
-    price: 'R$20,00',
-    imageSrc: 'https://play-lh.googleusercontent.com/TBRwjS_qfJCSj1m7zZB93FnpJM5fSpMA_wUlFDLxWAb45T9RmwBvQd5cWR5viJJOhkI',
-    imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
-  },
+  // {
+  //   id: 1,
+  //   name: 'Netflix - 30 dias 4K',
+  //   href: '#',
+  //   price: 'R$20,00',
+  //   imageSrc: 'https://play-lh.googleusercontent.com/TBRwjS_qfJCSj1m7zZB93FnpJM5fSpMA_wUlFDLxWAb45T9RmwBvQd5cWR5viJJOhkI',
+  //   imageAlt: 'Netflix',
+  // },
   {
     id: 2,
     name: 'Disney Plus - 30 dias',
     href: '#',
-    price: 'R$15,00',
+    price: 'R$10,00',
     imageSrc: 'https://play-lh.googleusercontent.com/xoGGYH2LgLibLDBoxMg-ZE16b-RNfITw_OgXBWRAPin2FZY4FGB9QKBYApR-0rSCkQ',
-    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+    imageAlt: 'Disney Plus',
   },
   {
     id: 3,
@@ -25,15 +25,15 @@ const products = [
     href: '#',
     price: 'R$10,00',
     imageSrc: 'https://play-lh.googleusercontent.com/1iyX7VdQ7MlM7iotI9XDtTwgiVmqFGzqwz10L67XVoyiTmJVoHX87QtqvcXgUnb0AC8',
-    imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+    imageAlt: 'HB0 Max',
   },
   {
     id: 4,
     name: 'Prime Video - 30 dias',
     href: '#',
-    price: 'R$8,00',
-    imageSrc: 'https://play-lh.googleusercontent.com/VojafVZNddI6JvdDGWFrRmxc-prrcInL2AuBymsqGoeXjT4f9sv7KnetB-v3iLxk_Koi',
-    imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
+    price: 'R$10,00',
+    imageSrc: 'https://play-lh.googleusercontent.com/myQ1zhcsVayRfqU9J253CBDIIPKKrVZ4ZEP8Jgq04bRPvDi-Z1GnXG9ojdCVMxpbWpOQ=w480-h960',
+    imageAlt: 'Prime Video',
   },
   // More products...
 ]

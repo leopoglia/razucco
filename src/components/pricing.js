@@ -11,8 +11,8 @@ export default function pricing() {
                     <div class="p-8 sm:p-10 lg:flex-auto">
                         <h3 class="block md:flex items-center text-2xl font-bold tracking-tight text-gray-900">Super Combo Streaming
                             <div className="flex md:ml-4 mt-4 md:mt-0">
-                                <img src="https://play-lh.googleusercontent.com/TBRwjS_qfJCSj1m7zZB93FnpJM5fSpMA_wUlFDLxWAb45T9RmwBvQd5cWR5viJJOhkI" className="w-10 mr-4 rounded-md" alt="" />
-                                <img src="https://play-lh.googleusercontent.com/VojafVZNddI6JvdDGWFrRmxc-prrcInL2AuBymsqGoeXjT4f9sv7KnetB-v3iLxk_Koi" className="w-10 mr-4 rounded-md" alt="" />
+                                {/* <img src="https://play-lh.googleusercontent.com/TBRwjS_qfJCSj1m7zZB93FnpJM5fSpMA_wUlFDLxWAb45T9RmwBvQd5cWR5viJJOhkI" className="w-10 mr-4 rounded-md" alt="" /> */}
+                                <img src="https://play-lh.googleusercontent.com/myQ1zhcsVayRfqU9J253CBDIIPKKrVZ4ZEP8Jgq04bRPvDi-Z1GnXG9ojdCVMxpbWpOQ=w480-h960" className="w-10 mr-4 rounded-md" alt="" />
                                 <img src="https://play-lh.googleusercontent.com/1iyX7VdQ7MlM7iotI9XDtTwgiVmqFGzqwz10L67XVoyiTmJVoHX87QtqvcXgUnb0AC8" className="w-10 mr-4 rounded-md" alt="" />
                                 <img src="https://play-lh.googleusercontent.com/xoGGYH2LgLibLDBoxMg-ZE16b-RNfITw_OgXBWRAPin2FZY4FGB9QKBYApR-0rSCkQ" className="w-10 mr-4 rounded-md" alt="" />
                             </div>
@@ -28,7 +28,7 @@ export default function pricing() {
                                 <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                                 </svg>
-                                Netflix, Amazon Prime, HBO Max e Disney+
+                                Amazon Prime, HBO Max e Disney+
                             </li>
 
                             <li class="flex gap-x-3">
@@ -58,7 +58,7 @@ export default function pricing() {
                             <div class="mx-auto max-w-xs px-8">
                                 <p class="text-base font-semibold text-gray-600">Por apenas</p>
                                 <p class="mt-6 flex items-baseline justify-center gap-x-2">
-                                    <span class="text-5xl font-bold tracking-tight text-gray-900">R$30</span>
+                                    <span class="text-5xl font-bold tracking-tight text-gray-900">R$20</span>
                                     <span class="text-sm font-semibold leading-6 tracking-wide text-gray-600">/mes</span>
                                 </p>
                                 <a href="#" class="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Assinar</a>
