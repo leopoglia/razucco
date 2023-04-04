@@ -125,17 +125,25 @@ export default function Product(props) {
                                                     <img src="/imgs/qr10.jpg" className="object-cover object-center" />
                                                 </div>
                                                 <div className="h-full flex sm:col-span-8 lg:col-span-7 items-center justify-center text-center">
+
                                                     <div className="overflow-hidden">
+
                                                         <div className="overflow-hidden whitespace-nowrap truncate">
                                                             00020126580014br.gov.bcb.pix0136b64e27fe-4785-4a19-85eb-e6816e079579520400005303986540510.005802BR5922LEONARDO HEITOR POGLIA6009Sao Paulo62070503***63048A1A
                                                         </div>
 
                                                         <button
                                                             type="submit"
-                                                            onClick={() => { setBuy(true) }}
+                                                            onClick={() => { navigator.clipboard.writeText("00020126580014br.gov.bcb.pix0136b64e27fe-4785-4a19-85eb-e6816e079579520400005303986540510.005802BR5922LEONARDO HEITOR POGLIA6009Sao Paulo62070503***63048A1A"); }}
                                                             className="mt-6 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 w-full">
                                                             Copiar
                                                         </button>
+
+                                                        <div>
+                                                            <p className="mt-2 text-sm text-gray-500">
+                                                                Coloque na descrição do pix seu whatssapp para que possamos entrar em contato.
+                                                            </p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
