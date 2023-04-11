@@ -3,14 +3,14 @@ import ProductModal from "./product.js"
 
 const products = [
   
-  // {
-  //   id: 1,
-  //   name: 'Netflix - 30 dias 4K',
-  //   href: '#',
-  //   price: 'R$20,00',
-  //   imageSrc: 'https://play-lh.googleusercontent.com/TBRwjS_qfJCSj1m7zZB93FnpJM5fSpMA_wUlFDLxWAb45T9RmwBvQd5cWR5viJJOhkI',
-  //   imageAlt: 'Netflix',
-  // },
+  {
+    id: 1,
+    name: 'Netflix - 30 dias 4K',
+    href: '#',
+    price: 'R$15,00',
+    imageSrc: 'https://play-lh.googleusercontent.com/TBRwjS_qfJCSj1m7zZB93FnpJM5fSpMA_wUlFDLxWAb45T9RmwBvQd5cWR5viJJOhkI',
+    imageAlt: 'Netflix',
+  },
   {
     id: 2,
     name: 'Disney Plus - 30 dias',
@@ -31,7 +31,7 @@ const products = [
     id: 4,
     name: 'Prime Video - 30 dias',
     href: '#',
-    price: 'R$10,00',
+    price: 'R$5,00',
     imageSrc: 'https://play-lh.googleusercontent.com/myQ1zhcsVayRfqU9J253CBDIIPKKrVZ4ZEP8Jgq04bRPvDi-Z1GnXG9ojdCVMxpbWpOQ=w480-h960',
     imageAlt: 'Prime Video',
   },
@@ -39,7 +39,7 @@ const products = [
     id: 5,
     name: 'Paramount Plus - 30 dias',
     href: '#',
-    price: 'R$10,00',
+    price: 'R$5,00',
     imageSrc: 'https://play-lh.googleusercontent.com/yRwIKVp_VSMpc4YRbXGaQcxOc-hPtnWlRTdb4FgLzrgnMrOXMkR7rYWQ4s8vY0iZZw',
     imageAlt: 'Paramount Plus',
   },
@@ -47,42 +47,50 @@ const products = [
     id: 6,
     name: 'Apple TV - 30 dias',
     href: '#',
-    price: 'R$10,00',
+    price: 'R$5,00',
     imageSrc: 'https://play-lh.googleusercontent.com/1XBAZjSOWaVM7UDFKvzuMR-WRoR5gCnsYrw17_ihHLcJKT9Qc7hXptHwWQ3Bf83mry4',
     imageAlt: 'Apple TV',
   },
   {
     id: 7,
-    name: 'Crunchyroll - 30 dias',
+    name: 'Star Plus - 30 dias',
     href: '#',
     price: 'R$10,00',
+    imageSrc: 'https://play-lh.googleusercontent.com/aZLb5JKvnzXBAcaU2M9fsgp0vfYBfsXQu_yHaehDzqMDqxCXixVPOdY3y1kWVfJfSBew',
+    imageAlt: 'Star Plus',
+  },
+  {
+    id: 8,
+    name: 'Crunchyroll - 30 dias',
+    href: '#',
+    price: 'R$8,00',
     imageSrc: 'https://store-images.s-microsoft.com/image/apps.42966.9007199266244356.370cd3e1-1443-49bc-902b-67e1afc6fd9d.fb87303e-4c57-4c85-a8f6-5675b46c1651',
     imageAlt: 'Crunchyroll',
   },
   {
-    id: 8,
+    id: 9,
     name: 'Youtube Premium - 30 dias',
     href: '#',
-    price: 'R$10,00',
+    price: 'R$5,00',
     imageSrc: 'https://www.icsdevon.co.uk/wp-content/uploads/2021/09/YouTube-logo-1536x1536.png',
     imageAlt: 'Youtube Premium',
   },
   {
-    id: 9,
+    id: 10,
     name: 'Spotify Premium - 30 dias',
     href: '#',
-    price: 'R$10,00',
+    price: 'R$5,00',
     imageSrc: 'https://play-lh.googleusercontent.com/nvz-bAP4aoChSpyENnKdNjMDeeRxCifE_VdTA4U-bJeKeZOAlZesFxFJ72yKlCJR2ro',
     imageAlt: 'Spotify Premium',
   },
   {
-    id: 10,
+    id: 11,
     name: 'Deezer Premium - 30 dias',
     href: '#',
-    price: 'R$10,00',
+    price: 'R$5,00',
     imageSrc: 'https://play-lh.googleusercontent.com/r55K1eQcji3QMHRKERq6zE1-csoh_MTOHiKyHTuTOblhFi_rIz06_8GN5-DHUGJOpn79',
     imageAlt: 'Deezer Premium',
-  },
+  }
   // More products...
 ]
 
@@ -98,7 +106,7 @@ export default function Product() {
 
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
           {products.map((product) => (
-            <div className="cursor-pointer" key={product.id} onClick={() => {setOpen(true); setProduct(product)}}>
+            <div className="cursor-pointer hover:opacity-90" key={product.id} onClick={() => {setOpen(true); setProduct(product)}}>
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-600 xl:aspect-h-8 xl:aspect-w-7">
                 <img
                   src={product.imageSrc}
