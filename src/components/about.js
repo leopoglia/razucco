@@ -6,7 +6,7 @@ export default function Footer() {
           <figure className="mt-10">
             <blockquote className="text-center text-xl font-ligth leading-8 text-gray-600 sm:text-2xl sm:leading-9">
               <p>
-                “Acabei de assinar a Raze e estou adorando! O catálogo de filmes e séries é incrível, e a qualidade do streaming é excelente. Além disso, o atendimento ao cliente da Raze é excepcional - sempre recebo respostas rápidas e eficazes quando tenho alguma dúvida. Recomendo a Raze para quem procura um serviço de streaming de alta qualidade e confiável.”
+                “Acabei de assinar a Razucco e estou adorando! O catálogo de filmes e séries é incrível, e a qualidade do streaming é excelente. Além disso, o atendimento ao cliente da Raze é excepcional - sempre recebo respostas rápidas e eficazes quando tenho alguma dúvida. Recomendo a Raze para quem procura um serviço de streaming de alta qualidade e confiável.”
               </p>
             </blockquote>
             <figcaption className="mt-10">
