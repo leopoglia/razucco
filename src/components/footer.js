@@ -23,7 +23,7 @@ export default function Footer() {
                     </ul>
                 </div>
                 <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-400 lg:my-8" />
-                <span class="flex text-sm text-gray-500 sm:text-center dark:text-gray-800 justify-center">Raze © 2023 <a href="https://flowbite.com/" class="hover:underline">™</a>. Todos os direitos reservados.</span>
+                <span class="flex text-sm text-gray-500 sm:text-center dark:text-gray-800 justify-center">Razucco © 2023 <a href="https://flowbite.com/" class="hover:underline">™</a>. Todos os direitos reservados.</span>
             </div>
         </footer>
 

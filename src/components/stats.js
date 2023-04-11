@@ -1,5 +1,5 @@
 const stats = [
-    { id: 1, name: '60% mais barato com o Raze', value: 'Economize' },
+    { id: 1, name: '60% mais barato com o Razucco', value: 'Economize' },
     { id: 2, name: 'Para a rede de compartilhamento', value: 'Contribua' },
     { id: 3, name: 'Com milhares de conteúdos', value: 'Divirta-se' },
   ]
