@@ -42,7 +42,7 @@ const products = [
   {
     id: 5,
     name: 'Paramount Plus - 30 dias',
-    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848abc9ff6018abf2205fa01ce',
+    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848abc9ff0018abf21b2ba0203',
     price: 'R$5,00',
     imageSrc: './imgs/logos/paramount.png',
     imageAlt: 'Paramount Plus',
@@ -51,7 +51,7 @@ const products = [
   {
     id: 6,
     name: 'Apple TV - 30 dias',
-    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848abc9ff6018abf2266d001cf',
+    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848abc9ff6018abf2205fa01ce',
     price: 'R$5,00',
     imageSrc: './imgs/logos/apple.png',
     imageAlt: 'Apple TV',
@@ -60,7 +60,7 @@ const products = [
   {
     id: 7,
     name: 'Star Plus - 30 dias',
-    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848abc9ff6018abf22bcc301d2',
+    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848abc9ff6018abf2266d001cf',
     price: 'R$10,00',
     imageSrc: './imgs/logos/star.png',
     imageAlt: 'Star Plus',
@@ -69,7 +69,7 @@ const products = [
   {
     id: 8,
     name: 'Crunchyroll - 30 dias',
-    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848abc9ff0018abf231d650204',
+    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848abc9ff6018abf22bcc301d2',
     price: 'R$8,00',
     imageSrc: './imgs/logos/crunchyroll.png',
     imageAlt: 'Crunchyroll',
@@ -78,7 +78,7 @@ const products = [
   {
     id: 9,
     name: 'Youtube Premium - 30 dias',
-    href: '',
+    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848abc9ff0018abf231d650204',
     price: 'R$5,00',
     imageSrc: './imgs/logos/youtube.png',
     imageAlt: 'Youtube Premium',
