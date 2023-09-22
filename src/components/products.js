@@ -6,7 +6,7 @@ const products = [
   {
     id: 1,
     name: 'Netflix - 30 dias 4K',
-    href: 'https://pay.kiwify.com.br/Yfkcubz',
+    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848abc9fed018abf12e1640200',
     price: 'R$20,00',
     imageSrc: './imgs/logos/netflix.png',
     imageAlt: 'Netflix',
@@ -15,7 +15,7 @@ const products = [
   {
     id: 2,
     name: 'Disney Plus - 30 dias',
-    href: 'https://pay.kiwify.com.br/rmHvJK5',
+    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848abc9ff6018abf1f111801cd',
     price: 'R$10,00',
     imageSrc: './imgs/logos/disney.png',
     imageAlt: 'Disney Plus',
@@ -24,7 +24,7 @@ const products = [
   {
     id: 3,
     name: 'HBO Max - 30 dias',
-    href: 'https://pay.kiwify.com.br/kXBMEz3',
+    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848abc9fed018abf20d8e7020e',
     price: 'R$10,00',
     imageSrc: './imgs/logos/hbo.png',
     imageAlt: 'HB0 Max',
@@ -33,7 +33,7 @@ const products = [
   {
     id: 4,
     name: 'Prime Video - 30 dias',
-    href: 'https://pay.kiwify.com.br/qooOmyC',
+    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848abc9fed018abf21609e020f',
     price: 'R$5,00',
     imageSrc: './imgs/logos/prime.png',
     imageAlt: 'Prime Video',
@@ -42,7 +42,7 @@ const products = [
   {
     id: 5,
     name: 'Paramount Plus - 30 dias',
-    href: 'https://pay.kiwify.com.br/OFKCQIU',
+    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848abc9ff6018abf2205fa01ce',
     price: 'R$5,00',
     imageSrc: './imgs/logos/paramount.png',
     imageAlt: 'Paramount Plus',
@@ -51,7 +51,7 @@ const products = [
   {
     id: 6,
     name: 'Apple TV - 30 dias',
-    href: 'https://pay.kiwify.com.br/Zn3DgIM',
+    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848abc9ff6018abf2266d001cf',
     price: 'R$5,00',
     imageSrc: './imgs/logos/apple.png',
     imageAlt: 'Apple TV',
@@ -60,7 +60,7 @@ const products = [
   {
     id: 7,
     name: 'Star Plus - 30 dias',
-    href: 'https://pay.kiwify.com.br/EB6ysus',
+    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848abc9ff6018abf22bcc301d2',
     price: 'R$10,00',
     imageSrc: './imgs/logos/star.png',
     imageAlt: 'Star Plus',
@@ -69,7 +69,7 @@ const products = [
   {
     id: 8,
     name: 'Crunchyroll - 30 dias',
-    href: 'https://pay.kiwify.com.br/8o4XIJr',
+    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848abc9ff0018abf231d650204',
     price: 'R$8,00',
     imageSrc: './imgs/logos/crunchyroll.png',
     imageAlt: 'Crunchyroll',
@@ -78,7 +78,7 @@ const products = [
   {
     id: 9,
     name: 'Youtube Premium - 30 dias',
-    href: 'https://pay.kiwify.com.br/rrBcOQ0',
+    href: '',
     price: 'R$5,00',
     imageSrc: './imgs/logos/youtube.png',
     imageAlt: 'Youtube Premium',
@@ -87,7 +87,7 @@ const products = [
   {
     id: 10,
     name: 'Spotify Premium - 30 dias',
-    href: 'https://pay.kiwify.com.br/P9CSoKL',
+    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848abc9fed018abf2392de0211',
     price: 'R$5,00',
     imageSrc: './imgs/logos/spotify.png',
     imageAlt: 'Spotify Premium',
@@ -96,7 +96,7 @@ const products = [
   {
     id: 11,
     name: 'Deezer Premium - 30 dias',
-    href: 'https://pay.kiwify.com.br/6x8X0Mv',
+    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848abc9fed018abf23e28e0212',
     price: 'R$5,00',
     imageSrc: './imgs/logos/deezer.png',
     imageAlt: 'Deezer Premium',

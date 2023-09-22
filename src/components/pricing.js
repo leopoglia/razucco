@@ -79,7 +79,7 @@ export default function Pricing() {
                     "Super Combo Streaming",
                     "Aproveite o melhor do entretenimento com as quatro plataformas de streaming mais populares em uma única compra: Prime video, HBO Max, Disney+, Star+ e Spotify.",
                     "R$25,00",
-                    "https://pay.kiwify.com.br/7Ly3FfD"
+                    "https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848ab07174018aba61163a0688"
                 )}
 
                 {products(
@@ -101,7 +101,7 @@ export default function Pricing() {
                     "Mega Combo Streaming",
                     "Aproveite o melhor do entretenimento com as quatro plataformas de streaming mais populares em uma única compra: Youtube, Crunchyroll, Disney, HBO Max, Star+ e Spotify.",
                     "R$35,00",
-                    "https://pay.kiwify.com.br/gXL9sBP"
+                    "https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848abc9ff0018abf0a930101e6"
                 )}
 
 
