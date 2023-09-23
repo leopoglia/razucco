@@ -107,7 +107,7 @@ const products = [
   {
     id: 12,
     name: 'Tidal Premium - 30 dias',
-    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848ab07174018abf24a1c00214',
+    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848abc9ff6018ac38e48ac038d',
     price: 'R$8,00',
     imageSrc: './imgs/logos/tidal.png',
     imageAlt: 'Tidal Premium',
@@ -117,7 +117,7 @@ const products = [
   {
     id: 13,
     name: 'DAZN - 30 dias',
-    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848ab07174018abf25a6e70217',
+    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848abc9ff0018ac38ed4c803c3',
     price: 'R$10,00',
     imageSrc: './imgs/logos/dazn.png',
     imageAlt: 'DAZN',
@@ -127,7 +127,7 @@ const products = [
   {
     id: 14,
     name: 'My Family Cinema - 30 dias',
-    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848ab07174018abf244f6e0213',
+    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848abc9ff6018ac390f5c50390',
     price: 'R$10,00',
     imageSrc: './imgs/logos/mycinema.png',
     imageAlt: 'My Family Cinema',
