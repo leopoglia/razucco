@@ -3,15 +3,15 @@ import ProductModal from "./product.js"
 
 const products = [
   
-  {
-    id: 1,
-    name: 'Netflix - 30 dias 4K',
-    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848abc9fed018abf12e1640200',
-    price: 'R$20,00',
-    imageSrc: './imgs/logos/netflix.png',
-    imageAlt: 'Netflix',
-    desc: "Com essa assinatura, você pode desfrutar de uma ampla variedade de filmes, séries e documentários em alta resolução durante 30 dias. Ideal para quem busca uma experiência de entretenimento de alta qualidade."
-  },
+  // {
+  //   id: 1,
+  //   name: 'Netflix - 30 dias 4K',
+  //   href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848abc9fed018abf12e1640200',
+  //   price: 'R$20,00',
+  //   imageSrc: './imgs/logos/netflix.png',
+  //   imageAlt: 'Netflix',
+  //   desc: "Com essa assinatura, você pode desfrutar de uma ampla variedade de filmes, séries e documentários em alta resolução durante 30 dias. Ideal para quem busca uma experiência de entretenimento de alta qualidade."
+  // },
   {
     id: 2,
     name: 'Disney Plus - 30 dias',
@@ -101,7 +101,58 @@ const products = [
     imageSrc: './imgs/logos/deezer.png',
     imageAlt: 'Deezer Premium',
     desc: 'Deezer Premium oferece acesso a um vasto catálogo de músicas, podcasts e estações de rádio. Com essa assinatura, você pode desfrutar de uma experiência musical premium por um mês.'
-  }
+  },
+ 
+
+  {
+    id: 12,
+    name: 'Tidal Premium - 30 dias',
+    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848ab07174018abf24a1c00214',
+    price: 'R$8,00',
+    imageSrc: './imgs/logos/tidal.png',
+    imageAlt: 'Tidal Premium',
+    desc: 'Tidal Premium oferece acesso a um vasto catálogo de músicas, podcasts e vídeos musicais. Com essa assinatura, você pode mergulhar em um mundo de música por um mês.'
+  },
+
+  {
+    id: 13,
+    name: 'DAZN - 30 dias',
+    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848ab07174018abf25a6e70217',
+    price: 'R$10,00',
+    imageSrc: './imgs/logos/dazn.png',
+    imageAlt: 'DAZN',
+    desc: 'DAZN oferece acesso a uma ampla variedade de esportes, incluindo futebol, basquete, tênis, boxe e muito mais. Com essa assinatura, você pode mergulhar em um mundo de esportes por um mês.'
+  },
+
+  {
+    id: 14,
+    name: 'My Family Cinema - 30 dias',
+    href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848ab07174018abf244f6e0213',
+    price: 'R$10,00',
+    imageSrc: './imgs/logos/mycinema.png',
+    imageAlt: 'My Family Cinema',
+    desc: 'My Family Cinema oferece acesso a um amplo catálogo de filmes e séries de TV. Com essa assinatura, você pode mergulhar em um mundo de entretenimento por um mês.'
+  },
+
+  // {
+  //   id: 14,
+  //   name: 'Play Plus - 30 dias',
+  //   href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848ab07174018abf24f9c40215',
+  //   price: 'R$5,00',
+  //   imageSrc: './imgs/logos/playplus.png',
+  //   imageAlt: 'Play Plus',
+  //   desc: 'Play Plus oferece acesso a um amplo catálogo de filmes, séries, programas de TV e reality shows. Com essa assinatura, você pode mergulhar em um mundo de entretenimento por um mês.'
+  // },
+
+  // {
+  //   id: 15,
+  //   name: 'Brasil Paralelo - 30 dias',
+  //   href: 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848ab07174018abf254d9e0216',
+  //   price: 'R$10,00',
+  //   imageSrc: './imgs/logos/brasilparalelo.png',
+  //   imageAlt: 'Brasil Paralelo',
+  //   desc: 'Brasil Paralelo oferece acesso a um vasto catálogo de documentários e séries. Com essa assinatura, você pode mergulhar em um mundo de conhecimento por um mês.'
+  // }
   // More products...
 ]
 
