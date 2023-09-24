@@ -156,7 +156,7 @@ const products = [
   // More products...
 ]
 
-export default function Product() {
+export default function Products() {
 
   const [open, setOpen] = useState(false);
   const [product, setProduct] = useState({});
