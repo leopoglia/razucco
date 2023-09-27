@@ -17,14 +17,14 @@ export default function Pricing() {
                 </h3>
                 <p className="mt-6 text-base leading-7 text-gray-600">{desc}</p>
                 <div className="mt-4 flex items-center gap-x-4">
-                    <h4 className="flex-none text-sm font-semibold leading-6 text-indigo-600">Está incluso</h4>
+                    <h4 className="flex-none text-sm font-semibold leading-6 text-blueblack">Está incluso</h4>
                     <div className="h-px flex-auto bg-gray-100"></div>
                 </div>
                 <ul role="list" className="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
 
                     {infos.map((info) => (
                         <li className="flex gap-x-3">
-                            <svg className="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <svg className="h-6 w-5 flex-none text-blue" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                 <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                             </svg>
                             <span>{info}</span>
@@ -43,7 +43,7 @@ export default function Pricing() {
                             <span className="text-sm font-semibold leading-6 tracking-wide text-gray-600">/mes</span>
                         </p>
                         <Link to={href}>
-                            <button className="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Assinar</button>
+                            <button className="mt-10 block w-full rounded-md bg-blue px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-blueblack focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:blueblack">Assinar</button>
                         </Link>
 
                         <p className="mt-6 text-xs leading-5 text-gray-600">Na renovação serão entregue novas contas das plataformas.</p>

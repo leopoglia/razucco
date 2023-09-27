@@ -104,7 +104,7 @@ export default function Product(props) {
 
                                                     <Link className="w-full" to={props.product.href}>
                                                         <button
-                                                            className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 w-full">
+                                                            className="flex w-full items-center justify-center rounded-md border border-transparent bg-blue px-8 py-3 text-base font-medium text-white hover:bg-blueblack focus:outline-none focus:ring-2 focus:ring-blueblack focus:ring-offset-2 w-full">
                                                             Comprar
                                                         </button>
                                                     </Link>
