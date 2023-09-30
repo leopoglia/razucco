@@ -13,11 +13,11 @@ export default function About() {
           <figcaption className="mt-10">
             <img
               className="mx-auto h-10 w-10 rounded-full"
-              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-              alt=""
+              src="/imgs/cassiano.png"
+              alt="Foto de Cassiano Danielsson"
             />
             <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-              <div className="font-semibold text-gray-800">Claudia Ramos</div>
+              <div className="font-semibold text-gray-800">Cassiano Danielsson</div>
               <svg viewBox="0 0 2 2" width={3} height={3} aria-hidden="true" className="fill-gray-800">
                 <circle cx={1} cy={1} r={1} />
               </svg>
