@@ -4,8 +4,8 @@ export default function Pricing() {
 
     const products = (products, infos, name, desc, price, href) => (
         <div className="mx-auto max-w-2xl rounded-md ring-1 ring-gray-200 mt-10 lg:mx-0 lg:flex lg:max-w-none">
-            <div className="p-8 sm:p-10 lg:flex-auto">
 
+            <div className="p-8 sm:p-10 lg:flex-auto">
                 <h3 className="block md:flex items-center text-2xl font-bold tracking-tight text-gray-900">{name}
                     <div className="flex md:ml-4 mt-4 md:mt-0">
                         {products.map((product) => (
@@ -55,10 +55,15 @@ export default function Pricing() {
 
     return (
         <div className="bg-white py-10 sm:py-10">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="mx-auto max-w-2xl text-center">
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Streaming preço justo</h2>
-                    <p className="mt-6 text-lg leading-7 text-gray-600">Bem-vindo à Razucco, loja de contas de streaming compartilhadas! Nós oferecemos acesso a uma ampla variedade de plataformas de streaming de vídeo por uma fração do preço de uma conta individual.</p>
+            <div className="mx-auto max-w-7xl lg:px-8">
+                <div className="w-auto mx-auto block justify-between items-center xl:flex">
+                    <div className="text-center">
+                        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Streaming preço justo</h2>
+                        <p className="mt-6 text-lg leading-7 text-gray-600">Bem-vindo à Razucco, loja de contas de streaming compartilhadas! Nós oferecemos acesso a uma ampla variedade de plataformas de streaming de vídeo por uma fração do preço de uma conta individual.</p>
+                    </div>
+                    <div className="w-full flex items-center justify-center">
+                        <img src="./imgs/discount.png" className="h-96 object-cover object-center rounded-none lg:rounded-l-md ml-24 mr-20" alt="" />
+                    </div>
                 </div>
 
                 {products(
@@ -67,10 +72,11 @@ export default function Pricing() {
                         "./imgs/logos/hbo.png",
                         "./imgs/logos/disney.png",
                         "./imgs/logos/star.png",
+                        "./imgs/logos/paramount.png",
                         "./imgs/logos/spotify.png"
                     ],
                     [
-                        "Prime, HBO Max, Disney+, Star+ e Spotify",
+                        "Prime, HBO Max, Disney+, Star+, Paramount e Spotify",
                         "Suporte para qualquer problema",
                         "Reposição de conta",
                         "Aviso quando acabar o plano"
@@ -78,7 +84,7 @@ export default function Pricing() {
                     ],
                     "Super Combo Streaming",
                     "Aproveite o melhor do entretenimento com as quatro plataformas de streaming mais populares em uma única compra: Prime video, HBO Max, Disney+, Star+ e Spotify.",
-                    "R$30,00",
+                    "R$25,00",
                     "https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848ab07174018aba61163a0688"
                 )}
 
