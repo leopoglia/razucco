@@ -58,7 +58,7 @@ export default function Pricing() {
             <div className="mx-auto max-w-7xl lg:px-8">
                 <div className="w-auto mx-auto block items-center xl:flex justify-center">
                     <div className="w-full flex items-center justify-center sm:mb-10">
-                        <div className="text-center max-w-2x1 p-10">
+                        <div className="text-center max-w-2x1 p-8">
                             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Streaming preço justo</h2>
                             <p className="mt-6 text-lg leading-7 text-gray-600">Bem-vindo à Razucco, loja de contas de streaming compartilhadas! Nós oferecemos acesso a uma ampla variedade de plataformas de streaming de vídeo por uma fração do preço de uma conta individual.</p>
                         </div>
