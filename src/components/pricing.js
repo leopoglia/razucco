@@ -36,7 +36,7 @@ export default function Pricing() {
             </div>
             <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
                 <div className="rounded-md bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
-                    <div className="mx-auto max-w-sm md:px-8 md:max-w-xs">
+                    <div className="mx-auto max-w-sm px-4 md:px-8 md:max-w-xs">
                         <p className="text-base font-semibold text-gray-600">Por apenas</p>
                         <p className="mt-6 flex items-baseline justify-center gap-x-2">
                             <span className="text-5xl font-bold tracking-tight text-gray-900">{price}</span>
