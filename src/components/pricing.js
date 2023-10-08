@@ -5,7 +5,7 @@ export default function Pricing() {
 
 
     const products = (products, infos, name, desc, price, href) => (
-        <div className="mx-auto max-w-2xl rounded-md ring-1 ring-gray-200 mt-10 lg:mx-0 lg:flex lg:max-w-none dark:ring-gray-900 dark:bg-gray-950">
+        <div className="mx-auto sm:max-w-2xl rounded-md ring-1 ring-gray-200 mt-10 lg:mx-0 lg:flex lg:max-w-none dark:ring-gray-900 dark:bg-gray-950">
 
             <div className="p-8 sm:p-10 lg:flex-auto">
                 <h3 className="block md:flex items-center text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-300">{name}
@@ -71,29 +71,32 @@ export default function Pricing() {
                     </div>
                 </div>
 
-                {products(
-                    [
-                        "./imgs/logos/prime.png",
-                        "./imgs/logos/hbo.png",
-                        "./imgs/logos/disney.png",
-                        "./imgs/logos/star.png",
-                        "./imgs/logos/paramount.png",
-                        "./imgs/logos/spotify.png"
-                    ],
-                    [
-                        "Prime, HBO Max, Disney+, Star+, Paramount e Spotify",
-                        "Suporte para qualquer problema",
-                        "Reposição de conta",
-                        "Aviso quando acabar o plano"
 
-                    ],
-                    "Super Combo Streaming",
-                    "Aproveite o melhor do entretenimento com as quatro plataformas de streaming mais populares em uma única compra: Prime video, HBO Max, Disney+, Star+ e Spotify.",
-                    "R$25,00",
-                    "https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848ab07174018aba61163a0688"
-                )}
+                <div className="p-4 sm:p-0">
 
-                {/* {products(
+                    {products(
+                        [
+                            "./imgs/logos/prime.png",
+                            "./imgs/logos/hbo.png",
+                            "./imgs/logos/disney.png",
+                            "./imgs/logos/star.png",
+                            "./imgs/logos/paramount.png",
+                            "./imgs/logos/spotify.png"
+                        ],
+                        [
+                            "Prime, HBO Max, Disney+, Star+, Paramount e Spotify",
+                            "Suporte para qualquer problema",
+                            "Reposição de conta",
+                            "Aviso quando acabar o plano"
+
+                        ],
+                        "Super Combo Streaming",
+                        "Aproveite o melhor do entretenimento com as quatro plataformas de streaming mais populares em uma única compra: Prime video, HBO Max, Disney+, Star+ e Spotify.",
+                        "R$25,00",
+                        "https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848ab07174018aba61163a0688"
+                    )}
+
+                    {/* {products(
                     [
                         "./imgs/logos/youtube.png",
                         "./imgs/logos/crunchyroll.png",
@@ -114,6 +117,7 @@ export default function Pricing() {
                     "R$35,00",
                     "https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c9380848abc9ff0018abf0a930101e6"
                 )} */}
+                </div>
 
 
             </div>
