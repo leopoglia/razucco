@@ -9,3 +9,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Poppins', sans-serif;
 }
+
+.dark body {
+  background-color: #000;
+}
+
+.dark:root {
+  color-scheme: dark;
+}

@@ -6,11 +6,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        blue: '#44A2FF',
-        blueblack: '#44A2F0'
+        "blue": '#44A2FF',
+        "blue-black": '#44A2F0',
+        "gray-900": '#30363D',
+        "gray-950": '#0D1117',
       },
     },
   },
+  darkMode: 'class',
   plugins: [],
 }
 
